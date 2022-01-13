@@ -37,3 +37,5 @@ print 'Whatever you like'
 
 
 >Adding My New VSCode Edits
+
+[Lab 1 Report Week 2 Link](https://daniel-tran3.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
