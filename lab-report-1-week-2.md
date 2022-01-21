@@ -28,6 +28,6 @@
 
 ## The Last Task, Optimization
 ![Optimization Screenshots](Making_Running_Easier_Screenshot.png)
-* Finally, to put everything together (and save some time) I combined terminal commands to make running code remotely easier
+* Finally, to put everything together (and save some time) I combined terminal commands to make running code remotely easier (about 20 keystrokes were saved by omitting the password, and more time was saved by not waiting to hit enter after the compile and run commands)
 * By using "" to run a command after logging in with the ```ssh``` command and using semicolons to run multiple commands, I was able to log in to UCSD's computer and compile and run WhereAmI.java with the one-line command below
 * ```ssh cse15lwi22amy@ieng6.ucsd.edu "javac WhereAmI.java; java WhereAmI"```
