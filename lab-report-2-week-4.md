@@ -3,7 +3,8 @@
 ## Code Change 1
 ![Code Change Screenshot 1](Code_Change_Diff_1.png)
 * Link to failure-inducing input: [Test File 7](https://daniel-tran3.github.io/markdown-parse/test-file7.md)
-* Symptom: 5) testFile7(MarkdownParseTest)<br>
+* Symptom (Command): ```java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore MarkdownParseTest```
+* Symptom (output): 5) testFile7(MarkdownParseTest)<br>
 java.lang.OutOfMemoryError: Java heap space<br>
         at java.base/java.util.Arrays.copyOf(Arrays.java:3512)<br>
         at java.base/java.util.Arrays.copyOf(Arrays.java:3481)<br>
@@ -18,7 +19,8 @@ java.lang.OutOfMemoryError: Java heap space<br>
 ## Code Change 2
 ![Code Change Screenshot 2](Code_Change_Diff_2.png)
 * Link to failure-inducing input: [Test File 6](https://daniel-tran3.github.io/markdown-parse/test-file6.md)
-* Symptom: 2) testFile6(MarkdownParseTest)<br>
+* Symptom (Command): ```java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore MarkdownParseTest```
+* Symptom (output): 2) testFile6(MarkdownParseTest)<br>
 java.lang.AssertionError: expected:<[page.com]> but was:<[]><br>
         at org.junit.Assert.fail(Assert.java:89)<br>
         at org.junit.Assert.failNotEquals(Assert.java:835)<br>
@@ -30,7 +32,8 @@ java.lang.AssertionError: expected:<[page.com]> but was:<[]><br>
 ## Code Change 3
 ![Code Change Screenshot 3](Code_Change_Diff_3.png)
 * Link to failure-inducing input: [Test File 5](https://daniel-tran3.github.io/markdown-parse/test-file5.md)
-* Symptom: 1) testFile5(MarkdownParseTest)<br>
+* Symptom (Command): ```java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore MarkdownParseTest```
+* Symptom (output): 1) testFile5(MarkdownParseTest)<br>
 java.lang.AssertionError: expected:<[page.com]> but was:<[]><br>
         at org.junit.Assert.fail(Assert.java:89)<br>
         at org.junit.Assert.failNotEquals(Assert.java:835)<br>
