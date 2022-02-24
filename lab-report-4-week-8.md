@@ -5,13 +5,13 @@ Note: All test code is copied to both mine and the reviewed implementations of M
 
 * Snippet 1:<br>
 ```
- `[a link`](url.com)
+     `[a link`](url.com)
 
-[another link](`google.com)`
+    [another link](`google.com)`
 
-[`cod[e`](google.com)
+    [`cod[e`](google.com)
 
-[`code]`](ucsd.edu) 
+    [`code]`](ucsd.edu) 
 ```
 
 * Desired Output
@@ -59,11 +59,11 @@ java.lang.AssertionError: expected:<[url.com, `google.com, google.com]> but was:
 
 * Snippet 2:<br>
 ```
-[a [nested link](a.com)](b.com)
+    [a [nested link](a.com)](b.com)
 
-[a nested parenthesized url](a.com(()))
+    [a nested parenthesized url](a.com(()))
 
-[some escaped \[ brackets \]](example.com) 
+    [some escaped \[ brackets \]](example.com) 
 ```
 
 * Desired Output
@@ -112,30 +112,30 @@ java.lang.AssertionError: expected:<[a.com, a.com((]> but was:<[a.com, a.com(())
 
 * Snippet 3:<br>
 ``` 
-[this title text is really long and takes up more than 
-one line
+    [this title text is really long and takes up more than 
+    one line
 
-and has some line breaks](
-    https://www.twitter.com
-)
+    and has some line breaks](
+        https://www.twitter.com
+    )
 
-[this title text is really long and takes up more than 
-one line](
-    https://ucsd-cse15l-w22.github.io/
-)
-
-
-[this link doesn't have a closing parenthesis](github.com
-
-And there's still some more text after that.
-
-[this link doesn't have a closing parenthesis for a while](https://cse.ucsd.edu/
+    [this title text is really long and takes up more than 
+    one line](
+        https://ucsd-cse15l-w22.github.io/
+    )
 
 
+    [this link doesn't have a closing parenthesis](github.com
 
-)
+    And there's still some more text after that.
 
-And then there's more text
+    [this link doesn't have a closing parenthesis for a while](https://cse.ucsd.edu/
+
+
+
+    )
+
+    And then there's more text
 ```
 
 * Desired Output
