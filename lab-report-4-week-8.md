@@ -169,25 +169,25 @@ java.lang.AssertionError: expected:<[]> but was:<[https://ucsd-cse15l-w22.github
 
 * Other implementation's output:<br>
 ```
-3) testSnippet3(MarkdownParseTest)
-java.lang.AssertionError: expected:<[
-    https://www.twitter.com
-,
-    https://ucsd-cse15l-w22.github.io/
-, github.com
+    3) testSnippet3(MarkdownParseTest)
+    java.lang.AssertionError: expected:<[
+        https://www.twitter.com
+    ,
+        https://ucsd-cse15l-w22.github.io/
+    , github.com
 
-And there's still some more text after that.
+    And there's still some more text after that.
 
-[this link doesn't have a closing parenthesis for a while](https://cse.ucsd.edu/
+    [this link doesn't have a closing parenthesis for a while](https://cse.ucsd.edu/
 
 
 
-]> but was:<[https://ucsd-cse15l-w22.github.io/]>
-        at org.junit.Assert.fail(Assert.java:89)
-        at org.junit.Assert.failNotEquals(Assert.java:835)
-        at org.junit.Assert.assertEquals(Assert.java:120)
-        at org.junit.Assert.assertEquals(Assert.java:146)
-        at MarkdownParseTest.testSnippet3(MarkdownParseTest.java:125)
+    ]> but was:<[https://ucsd-cse15l-w22.github.io/]>
+            at org.junit.Assert.fail(Assert.java:89)
+            at org.junit.Assert.failNotEquals(Assert.java:835)
+            at org.junit.Assert.assertEquals(Assert.java:120)
+            at org.junit.Assert.assertEquals(Assert.java:146)
+            at MarkdownParseTest.testSnippet3(MarkdownParseTest.java:125)
 ```
 
 
