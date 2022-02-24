@@ -3,7 +3,7 @@ Note: All test code is copied to both mine and the reviewed implementations of M
 
 ## Test 1
 
-* Snippet 1:
+* Snippet 1:<br>
 ```
  `[a link`](url.com)
 
@@ -19,7 +19,7 @@ Note: All test code is copied to both mine and the reviewed implementations of M
 ["`google.com", "google.com", "ucsd.edu"]
 ```
 
-* MarkdownParseTest.java Code:
+* MarkdownParseTest.java Code:<br>
 ```
     @Test
     public void testSnippet1() throws IOException {
@@ -32,7 +32,7 @@ Note: All test code is copied to both mine and the reviewed implementations of M
 * MarkdownParseTest.java Screenshot:
 ![Snippet 1 Test](lab-report-4-snippet-1-test.png)
 
-* My implementation's output:
+* My implementation's output:<br>
 ```
 1) testSnippet1(MarkdownParseTest)
 java.lang.AssertionError: expected:<[url.com, `google.com, google.com, ucsd.edu]> but was:<[`google.com, google.com, ucsd.edu]>
@@ -43,7 +43,7 @@ java.lang.AssertionError: expected:<[url.com, `google.com, google.com, ucsd.edu]
         at MarkdownParseTest.testSnippet1(MarkdownParseTest.java:84)
 ```
 
-* Other implementation's output:
+* Other implementation's output:<br>
 ```
 1) testSnippet1(MarkdownParseTest)
 java.lang.AssertionError: expected:<[url.com, `google.com, google.com]> but was:<[`google.com, google.com, ucsd.edu]>
@@ -57,7 +57,7 @@ java.lang.AssertionError: expected:<[url.com, `google.com, google.com]> but was:
 
 ## Test 2
 
-* Snippet 2:
+* Snippet 2:<br>
 ```
 [a [nested link](a.com)](b.com)
 
@@ -70,7 +70,7 @@ java.lang.AssertionError: expected:<[url.com, `google.com, google.com]> but was:
 ```
 ["a.com", "a.com(())", "example.com"]
 ```
-* MarkdownParseTest.java Code:
+* MarkdownParseTest.java Code:<br>
 ```
     @Test
     public void testSnippet2() throws IOException {
@@ -83,7 +83,7 @@ java.lang.AssertionError: expected:<[url.com, `google.com, google.com]> but was:
 * MarkdownParseTest.java Screenshot:
 ![Snippet 2 Test](lab-report-4-snippet-2-test.png)
 
-* My implementation's output:
+* My implementation's output:<br>
 ```
 2) testSnippet2(MarkdownParseTest)
 java.lang.AssertionError: expected:<[a.com, a.com((, example.com]> but was:<[a.com, a.com(()), example.com]>
@@ -94,7 +94,7 @@ java.lang.AssertionError: expected:<[a.com, a.com((, example.com]> but was:<[a.c
         at MarkdownParseTest.testSnippet2(MarkdownParseTest.java:91)
 ```
 
-* Other implementation's output:
+* Other implementation's output:<br>
 ```
 2) testSnippet2(MarkdownParseTest)
 java.lang.AssertionError: expected:<[a.com, a.com((]> but was:<[a.com, a.com(()), example.com]>
@@ -110,7 +110,7 @@ java.lang.AssertionError: expected:<[a.com, a.com((]> but was:<[a.com, a.com(())
 
 ## Test 3
 
-* Snippet 3:
+* Snippet 3:<br>
 ``` 
 [this title text is really long and takes up more than 
 one line
@@ -143,7 +143,7 @@ And then there's more text
 ["https://ucsd-cse15l-w22.github.io/"]
 ```
 
-* MarkdownParseTest.java Code:
+* MarkdownParseTest.java Code:<br>
 ```
     @Test
     public void testSnippet3() throws IOException {
@@ -156,7 +156,7 @@ And then there's more text
 * MarkdownParseTest.java Screenshot:
 ![Snippet 3 Test](lab-report-4-snippet-3-test.png)
 
-* My implementation's output:
+* My implementation's output:<br>
 ```
 3) testSnippet3(MarkdownParseTest)
 java.lang.AssertionError: expected:<[]> but was:<[https://ucsd-cse15l-w22.github.io/]>
@@ -167,7 +167,7 @@ java.lang.AssertionError: expected:<[]> but was:<[https://ucsd-cse15l-w22.github
         at MarkdownParseTest.testSnippet3(MarkdownParseTest.java:98)
 ```
 
-* Other implementation's output:
+* Other implementation's output:<br>
 ```
 3) testSnippet3(MarkdownParseTest)
 java.lang.AssertionError: expected:<[
