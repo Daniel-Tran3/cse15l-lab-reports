@@ -1,5 +1,8 @@
 # Week 8, Lab Report 4
-Note: All test code is copied to both mine and the reviewed implementations of MarkdownParse
+Note: All test code is copied to both mine and the reviewed implementations of MarkdownParse<br>
+[My repository](https://github.com/Daniel-Tran3/markdown-parse)<br>
+[Other repository](https://github.com/annakkin/markdown-parse)
+
 
 ## Test 1
 
