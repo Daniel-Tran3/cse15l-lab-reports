@@ -21,7 +21,7 @@ of running a bash for loop.<br>
 ```
 []
 ```
-* Provided implementation: Correct
+* Provided implementation: Incorrect
 * Provided implementation output:
 ```
 [baz]
