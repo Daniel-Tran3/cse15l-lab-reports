@@ -35,7 +35,7 @@ of running a bash for loop.<br>
             newline2 < closeParen && newline2 > openParen) {
         currentIndex = closeParen + 1;
         continue;
-}
+    }
 ```
 
 ## Test 2
