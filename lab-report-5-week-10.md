@@ -6,6 +6,16 @@ of running a bash for loop.<br>
 
 ## Test 1
 * Test file: 201.md
+* .md File Contents:
+```
+[foo]: (baz)
+
+[foo]
+```
+* Correct Output (Using CommonMark):
+```
+[(baz)]
+```
 * My implementation: Incorrect
 * My implementation output:
 ```
@@ -16,7 +26,7 @@ of running a bash for loop.<br>
 ```
 [baz]
 ```
-* Bug description (my code): My code immediately rules out a possible link if there is anything in-between the closed bracket and open parentheses, which rules out some valid links when there is a colon between the open bracket and the closed parentheses.
+* Bug description (my code): My code immediately rules out a possible link if there is anything in-between the closed bracket and open parentheses, which rules out some valid links when there is a colon between the open bracket and the closed parentheses (a different style of marking a link).
 * Part of code to be fixed:
 ```
 if (nextOpenBracket > 0 && 
@@ -30,6 +40,14 @@ if (nextOpenBracket > 0 &&
 
 ## Test 2
 * Test file: 41.md
+* .md File Contents:
+```
+[a](url "tit")
+```
+* Correct Output (Using CommonMark):
+```
+[url]
+```
 * My implementation: Incorrect
 * My implementation output:
 ```
