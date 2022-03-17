@@ -8,9 +8,9 @@ of running a bash for loop.<br>
 * Test file: 201.md
 * .md File Contents:<br>
 ```
-[foo]: (baz)
+    [foo]: (baz)
 
-[foo]
+    [foo]
 ```
 * Correct Output (Using CommonMark):<br>
 ```
@@ -29,12 +29,12 @@ of running a bash for loop.<br>
 * Bug description (my code): My code immediately rules out a possible link if there is anything in-between the closed bracket and open parentheses, which rules out some valid links when there is a colon between the open bracket and the closed parentheses (a different style of marking a link).
 * Part of code to be fixed:
 ```
-if (nextOpenBracket > 0 && 
-        markdown.charAt(nextOpenBracket - 1) == '!' ||
-        markdown.charAt(openParen - 1) != ']' || 
-        newline2 < closeParen && newline2 > openParen) {
-    currentIndex = closeParen + 1;
-    continue;
+    if (nextOpenBracket > 0 && 
+            markdown.charAt(nextOpenBracket - 1) == '!' ||
+            markdown.charAt(openParen - 1) != ']' || 
+            newline2 < closeParen && newline2 > openParen) {
+        currentIndex = closeParen + 1;
+        continue;
 }
 ```
 
