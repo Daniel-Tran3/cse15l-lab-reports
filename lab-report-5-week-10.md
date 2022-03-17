@@ -6,13 +6,13 @@ of running a bash for loop.<br>
 
 ## Test 1
 * Test file: 201.md
-* .md File Contents:
+* .md File Contents:<br>
 ```
 [foo]: (baz)
 
 [foo]
 ```
-* Correct Output (Using CommonMark):
+* Correct Output (Using CommonMark):<br>
 ```
 [(baz)]
 ```
@@ -40,11 +40,11 @@ if (nextOpenBracket > 0 &&
 
 ## Test 2
 * Test file: 41.md
-* .md File Contents:
+* .md File Contents:<br>
 ```
 [a](url "tit")
 ```
-* Correct Output (Using CommonMark):
+* Correct Output (Using CommonMark):<br>
 ```
 [url]
 ```
